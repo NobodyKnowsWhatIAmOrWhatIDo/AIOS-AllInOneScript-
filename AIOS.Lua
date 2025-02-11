@@ -2,9 +2,9 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Hubs",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Rayfield Interface Suite",
-   LoadingSubtitle = "by Sirius",
-   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   LoadingTitle = "Rayfield UI",
+   LoadingSubtitle = "HUB by Mreow42069",
+   Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = true,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -16,8 +16,8 @@ local Window = Rayfield:CreateWindow({
    },
 
    Discord = {
-      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
-      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "tnVJwTCAGy", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
@@ -25,38 +25,57 @@ local Window = Rayfield:CreateWindow({
    KeySettings = {
       Title = "AIOS(All In One Script)",
       Subtitle = "Key System",
-      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      Note = "Join the DC for key or check the code", -- Use this to tell the user how to get a key
       FileName = "NotTheRayfieldKeyFileName", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = {"SimpleKey"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
-local Hubs = Window:CreateTab("Script Hubs", 4483362458) -- Title, Image
+local GlobalHubs = Window:CreateTab("Global Hubs", 4483362458) -- TItle, Image
 
-local Button = Hubs:CreateButton({
-   Name = "Kade",
-   Callback = function()
-   getgenv().DisableWarning = false
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/KadeHubRepository/main/Latest.lua"))() -- The function that takes place when the button is pressed
-   end,
-})
-
-local Button = Hubs:CreateButton({
-   Name = "Phatasm",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/Phantasm/refs/heads/main/Phantasm.lua"))() -- The function that takes place when the button is pressed
-   end,
-})
-
-local Button = Hubs:CreateButton({
+local Button = GlobalHubs:CreateButton({
    Name = "InfYield",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))() -- The function that takes place when the button is pressed
    end,
 })
 
-local Movesets = Window:CreateTab("Movesets", 44833624582) -- Title, Image
+local Button = GlobalHubs:CreateButton({
+   Name = "Open Aimbot",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ttwizz/Open-Aimbot/master/source.lua", true))()
+   end,
+})   
+   
+local Button = GlobalHubs:CreateButton({   
+   Name = "wisl Universal",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/wisl884/wisl-i-Universal-Project1/main/Wisl'i%20Universal%20Project.lua", true))()
+   end,
+})   
+   
+   
+local Movesets = Window:CreateTab("TSB scripts", 4483362458) -- Title, Image
+
+local TSBHubsSection = Movesets:CreateSection ("TSB Hubs")
+
+local Button = Movesets:CreateButton({
+   Name = "Kade HUB",
+   Callback = function()
+   getgenv().DisableWarning = false
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/KadeHubRepository/main/Latest.lua"))() -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Movesets:CreateButton({
+   Name = "Phatasm HUB",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/Phantasm/refs/heads/main/Phantasm.lua"))() -- The function that takes place when the button is pressed
+   end,
+})
+
+
 local SaitamaSection = Movesets:CreateSection("Saitama Movesets")
 
 local Button = Movesets:CreateButton({
@@ -145,7 +164,7 @@ local Button = Movesets:CreateButton({
 local GarouSection = Movesets:CreateSection("Garou Movesets")
 
 local Button = Movesets:CreateButton({
-   Name = "Arcauru",
+   Name = "Arcauru (Flashing Lights warning)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/ARCAURA.lua"))() -- The function that takes place when the button is pressed
    end,
@@ -171,9 +190,4 @@ local AtomicSection = Movesets:CreateSection("Atomic Samurai")
 
 local TatsumakiSection = Movesets:CreateSection ("Tatsumaki")
 
-  local Button = Movesets:CreateButton({
-   Name = "snas",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Qaiddanial2904/ROBLOX-FREAKY-GOJO-REAL/refs/heads/main/SANS%20%5BREDACTED%5D"))() -- The function that takes place when the button is pressed
-   end,
 })
