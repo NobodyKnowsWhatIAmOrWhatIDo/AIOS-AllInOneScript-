@@ -100,6 +100,20 @@ local Button = Movesets:CreateButton({
 })
 
 local Button = Movesets:CreateButton({
+   Name = "Hakari (NoStun)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/eEDYWj8p"))() 
+   end,
+})
+
+local Button = Movesets:CreateButton({
+   Name = "Boros",
+   Callback = function()
+   loadstring(game:HttpGet"https://paste.ee/r/XPIH5")()
+   end,
+})
+
+local Button = Movesets:CreateButton({
    Name = "Jun",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Tp%20exploit%20saitama%20to%20jun'))() -- The function that takes place when the button is pressed
@@ -161,7 +175,39 @@ local Button = Movesets:CreateButton({
    end,
 })
 
+local Button = Movesets:CreateButton({
+   Name = "VEXOR (If u see Credits click top right credits)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/VEXOR.lua"))() 
+   end,
+})
+
+local Button = Movesets:CreateButton({
+   Name = "SHINJI",
+   Callback = function()
+   getgenv().speedtools = false --- set true if you want use this tool if you want to run
+   getgenv().speedpunch= true --- tp and normal Punch
+   getgenv().dance= true --- set true if you want to this dance song made by rebzyyx all I want is you 
+   getgenv().night= true -- set true if you want to day to night 
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Shinji%20tp%20exploit'))()
+   end,
+})
+
+local Button = Movesets:CreateButton({
+   Name = "LUFFY",
+   Callback = function()
+   loadstring(game:HttpGet("https://github.com/aggiealledge/obfuscated-scripts/raw/refs/heads/main/Protected_7732857839120517.txt"))()
+   end,
+})
+
 local GarouSection = Movesets:CreateSection("Garou Movesets")
+
+local Button = Movesets:CreateButton({
+   Name = "Garou KJ",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/damir512/garoukjv1maybeidk/main/Protected_2460290213750059.txt",true))()
+   end,
+})
 
 local Button = Movesets:CreateButton({
    Name = "Arcauru (Flashing Lights warning)",
@@ -170,6 +216,30 @@ local Button = Movesets:CreateButton({
    end,
 })
 
+local Button = Movesets:CreateButton({
+   Name = "Okarun",
+   Callback = function()
+   loadstring(game:HttpGet"https://paste.ee/r/Pn4oj")()
+   end,
+})
+
+local Button = Movesets:CreateButton({
+   Name = "Minos Prime",
+   callback = function ()
+   _G.SkipIntro = true -- set to true if u want to skip minos prime intro
+   _G.Night = false -- set to true if u want night
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/S1gmaGuy/MinosPrimeFixed/refs/heads/main/ThefixIsSoSigma"))() 
+  end,
+})
+   
+local Button = Movesets:CreateButton({
+   Name = "Akaza",
+   Callback = function()
+   loadstring(game:HttpGet("https://paste.ee/r/zzvAH"))()
+   end,
+})   
+   
 local BatSection = Movesets:CreateSection("Bat Movesets")
 
 local AtomicSection = Movesets:CreateSection("Atomic Samurai")
@@ -187,5 +257,17 @@ local AtomicSection = Movesets:CreateSection("Atomic Samurai")
    loadstring(game:HttpGet("https://github.com/aggiealledge/obfuscated-scripts/raw/refs/heads/main/sukuna"))() -- The function that takes place when the button is pressed
    end,
 })
+
+local SonicSection = Movesets:CreateSection ("Sonic")
+
+local Button = Movesets:CreateButton({
+   Name = "Chainsaw Man",
+   callback = function()
+   loadstring(game:HttpGet("https://gist.githubusercontent.com/GoldenHeads2/0fd8d36993c850f3fac89e5adf793076/raw/ab4f5a42bd0b2e24a32a46301d533ea849ca771c/gistfile1.txt"))()
+   end,
+})
+
+local TatsumakiSection = Movesets:CreateSection ("Tatsumaki")
+
 
 local TatsumakiSection = Movesets:CreateSection ("Tatsumaki")
