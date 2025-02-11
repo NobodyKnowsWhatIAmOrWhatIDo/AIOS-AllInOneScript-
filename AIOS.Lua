@@ -262,7 +262,7 @@ local SonicSection = Movesets:CreateSection ("Sonic")
 
 local Button = Movesets:CreateButton({
    Name = "Chainsaw Man",
-   callback = function()
+   Callback = function()
    loadstring(game:HttpGet("https://gist.githubusercontent.com/GoldenHeads2/0fd8d36993c850f3fac89e5adf793076/raw/ab4f5a42bd0b2e24a32a46301d533ea849ca771c/gistfile1.txt"))()
    end,
 })
