@@ -75,6 +75,12 @@ local Button = Movesets:CreateButton({
    end,
 })
 
+local Button = Movesets:CreateButton({
+   Name = "Closet phantasm",
+   Callback = function()
+   loadstring(game:HttpGet("https://gist.githubusercontent.com/ATrainz/1e5e633601043f214d6012d1cf20f450/raw/40378b54bd8304470d16e8fefd6f6ae50557f847/a1b2c3d4e5f6g7h8i9j10k11l12m13n14o15p16.lua"))()
+   end,
+})  
 
 local SaitamaSection = Movesets:CreateSection("Saitama Movesets")
 
