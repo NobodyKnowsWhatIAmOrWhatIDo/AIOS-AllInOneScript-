@@ -231,7 +231,7 @@ local Button = Movesets:CreateButton({
 
 local Button = Movesets:CreateButton({
    Name = "Minos Prime",
-   callback = function ()
+   Callback = function ()
    _G.SkipIntro = true -- set to true if u want to skip minos prime intro
    _G.Night = false -- set to true if u want night
 
