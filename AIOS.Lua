@@ -69,7 +69,7 @@ local Button = Movesets:CreateButton({
 })
 
 local Button = Movesets:CreateButton({
-   Name = "Phatasm HUB",
+   Name = "Phatasm HUB (Half broken :C   )",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/Phantasm/refs/heads/main/Phantasm.lua"))() -- The function that takes place when the button is pressed
    end,
